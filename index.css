@@ -27,7 +27,15 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(242,242,247);
+    background-color: rgb(242, 242, 247);
+}
+
+.navbar h3 {
+    white-space: nowrap;
+}
+
+.navbar a {
+    white-space: nowrap;
 }
 
 .about {
@@ -37,7 +45,7 @@ a {
     padding-right: 40px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 90px; 
+    padding-top: 90px;
     margin-top: -80px
 }
 
@@ -45,27 +53,28 @@ a {
     padding-top: 90px;
 } */
 
-.about > p {
+.about>p {
     margin-top: 10px;
 }
 
-.resume, .projects {
+.resume,
+.projects {
     margin-top: 20px;
     max-width: 800px;
     padding-left: 40px;
     padding-right: 40px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 90px; 
+    padding-top: 90px;
     margin-top: -80px
 }
 
-.projects > p > a {
+.projects>p>a {
     text-decoration: none;
     color: rgb(79, 134, 192)
 }
 
-.projects > p > a:hover {
+.projects>p>a:hover {
     text-decoration: none;
     color: rgb(31, 66, 103)
 }
@@ -85,4 +94,20 @@ li {
 
 hr {
     border: 0.5px black solid;
+}
+
+@media (max-width: 480px) {
+    .navbar h3 {
+        font-size: 1rem;
+        margin-left: 10px !important;
+    }
+
+    .navbar>div {
+        column-gap: 6px !important;
+        margin-right: 10px !important;
+    }
+
+    .navbar a {
+        font-size: 0.7rem;
+    }
 }
